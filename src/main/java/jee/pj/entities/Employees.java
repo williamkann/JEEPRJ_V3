@@ -76,7 +76,18 @@ public class Employees implements Serializable {
 
     public Employees() {
     }
-
+    public Employees(Integer idemp, String lastname, String firstname, String homePhone, String mobilePhone, String workPhone,String address,String postalCode,String city, String email ) {
+        this.idemp = idemp;
+        this.address = address;
+        this.city = city;
+        this.email = email;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.homephone = homePhone;
+        this.mobilephone = mobilePhone;
+        this.postalcode = postalCode;
+        this.workphone = workPhone;
+    }
     public Employees(Integer idemp) {
         this.idemp = idemp;
     }
